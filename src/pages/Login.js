@@ -24,7 +24,7 @@ class Login extends React.Component {
   }
 
   render() {
-    const { shouldRedirect, loading } = this.state;
+    const { shouldRedirect, loadin } = this.state;
     if (shouldRedirect === true) {
       return <Redirect to="/carteira" />;
     }
@@ -43,8 +43,8 @@ class Login extends React.Component {
               data-testid="email-input"
               type="text"
               id="input-mail"
-              value={ email }
-              onChange={ (e) => this.setState({ email: e.target.value }) }
+              value={email}
+              onChange={(e) => this.setState({ email: e.target.value })}
               placeholder="email"
             />
           </label>
@@ -52,9 +52,9 @@ class Login extends React.Component {
             Senha
             <input
               data-testid="password-input"
-              value={ password }
+              value={password}
               type="password"
-              onChange={ (e) => this.setState({ password: e.target.value }) }
+              onChange={(e) => this.setState({ password: e.target.value })}
               placeholder="senha"
             />
           </label>
@@ -62,9 +62,9 @@ class Login extends React.Component {
         <div className="link">
           <button
             type="button"
-            disabled={ password.length <= limite
-            || !email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) }
-            onClick={ () => this.changeHandler(email) }
+            disabled={password.length <= limite
+              || !email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)}
+            onClick={() => this.changeHandler(email)}
           >
             Entrar
           </button>

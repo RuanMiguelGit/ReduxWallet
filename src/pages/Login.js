@@ -24,7 +24,7 @@ class Login extends React.Component {
   }
 
   render() {
-    const { shouldRedirect, loadin } = this.state;
+    const { shouldRedirect, loading } = this.state;
     if (shouldRedirect === true) {
       return <Redirect to="/carteira" />;
     }

@@ -1,0 +1,35 @@
+.Input {
+  background: transparent;
+  background-color: white; 
+  border: 0;
+  border-bottom: 2px solid $gray;
+  color: white;
+  font-family: inherit;
+  font-size: 0.8rem;
+  margin: 5px;
+  padding: 5px 0;
+  transition: border-color 0.2s;
+  width: 10%;
+}
+
+.ButtonS {
+  background-color: #816e01; /* Green */
+  border: none;
+  border-radius: 2%;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  height: 12%;
+}
+
+.tableB {
+  background-color: white;
+  color: white;
+  text-align: center;
+  text-decoration: solid bold;
+}
+
+.tableA {
+  background-color: rgb(42, 119, 100);
+}

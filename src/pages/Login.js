@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { userEmail } from '../actions';
-
+import '../pages/Login.css'
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -38,22 +38,24 @@ class Login extends React.Component {
       <div className="Login">
         <form>
           <label htmlFor="input-mail">
-            Login
+            {" "}
             <input
               data-testid="email-input"
               type="text"
               id="input-mail"
+              className='InputLg'
               value={email}
               onChange={(e) => this.setState({ email: e.target.value })}
               placeholder="email"
             />
           </label>
           <label htmlFor="input-pass">
-            Senha
+
             <input
               data-testid="password-input"
               value={password}
               type="password"
+              className='InputLg'
               onChange={(e) => this.setState({ password: e.target.value })}
               placeholder="senha"
             />
@@ -62,6 +64,7 @@ class Login extends React.Component {
         <div className="link">
           <button
             type="button"
+            className='loginButton'
             disabled={password.length <= limite
               || !email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)}
             onClick={() => this.changeHandler(email)}

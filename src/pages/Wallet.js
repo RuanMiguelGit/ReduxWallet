@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { addExpense, getData } from '../actions';
 import Header from '../components/Header';
 import Table from '../components/Table';
+import '../pages/Table.css'
 
 class Wallet extends React.Component {
   constructor(props) {
@@ -29,14 +30,14 @@ class Wallet extends React.Component {
     return (
       <label htmlFor="expense">
         {' '}
-        Gastos
         <input
+          className='Input'
           data-testid="value-input"
           type="number"
           id="expenses"
-          value={ value }
-          onChange={ (e) => this.setState({ value: e.target.value }) }
-          placeholder="gastos"
+          value={value}
+          onChange={(e) => this.setState({ value: e.target.value })}
+          placeholder="Gastos"
         />
       </label>
     );
@@ -45,15 +46,15 @@ class Wallet extends React.Component {
   inputDescription() {
     const { description } = this.state;
     return (
-      <label htmlFor="description">
+      <label htmlFor="Description">
         {' '}
-        Descrição da Despesa
         <input
+          className="Input"
           data-testid="description-input"
-          value={ description }
+          value={description}
           type="text"
-          onChange={ (e) => this.setState({ description: e.target.value }) }
-          placeholder="descricão"
+          onChange={(e) => this.setState({ description: e.target.value })}
+          placeholder="Descricão"
         />
       </label>
     );
@@ -68,16 +69,17 @@ class Wallet extends React.Component {
       return (
 
         <select
+          className="Input"
           id="currency"
           data-testid="currency-input"
-          value={ currency }
+          value={currency}
           type="dropbox"
-          onChange={ (e) => this.setState({ currency: e.target.value }) }
+          onChange={(e) => this.setState({ currency: e.target.value })}
         >
 
           {Object.values(currencyData).filter((item) => item.name !== 'Dólar Turismo')
             .map((el) => (
-              <option key={ el.code } data-testid={ el.code } value={ el.code }>
+              <option key={el.code} data-testid={el.code} value={el.code}>
                 {el.code}
               </option>
             ))}
@@ -93,10 +95,11 @@ class Wallet extends React.Component {
     return (
 
       <select
+        className="Input"
         data-testid="method-input"
-        value={ method }
+        value={method}
         type="text"
-        onChange={ (e) => this.setState({ method: e.target.value }) }
+        onChange={(e) => this.setState({ method: e.target.value })}
         placeholder="método"
       >
         <option value="Dinheiro">Dinheiro</option>
@@ -110,10 +113,11 @@ class Wallet extends React.Component {
     const { tag } = this.state;
     return (
       <select
+        className="Input"
         data-testid="tag-input"
-        value={ tag }
+        value={tag}
         type="text"
-        onChange={ (e) => this.setState({ tag: e.target.value }) }
+        onChange={(e) => this.setState({ tag: e.target.value })}
         placeholder="tag"
       >
         <option value="Alimentação">Alimentação</option>
@@ -177,7 +181,7 @@ class Wallet extends React.Component {
           </thead>
           <tbody>
             {expensesData.map((item) => (
-              <tr key={ item.id }>
+              <tr key={item.id}>
                 <td>{item.description}</td>
                 <td>{item.tag}</td>
                 <td>{item.method}</td>
@@ -201,7 +205,8 @@ class Wallet extends React.Component {
     return (
       <button
         type="button"
-        onClick={ () => this.buttonHandler() }
+        className="ButtonS"
+        onClick={() => this.buttonHandler()}
       >
         Adicionar despesa
       </button>

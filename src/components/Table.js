@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeExpense } from '../actions';
+import '../pages/Table.css'
 
 class Table extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class Table extends React.Component {
     return (
 
       <table>
-        <thead>
+        <thead className="TableB">
           <tr>
             <th>Descrição</th>
             <th>Tag</th>
@@ -24,23 +25,24 @@ class Table extends React.Component {
         </thead>
         <tbody>
           {expensesData.map((item) => (
-            <tr key={ item.id }>
-              <td>{item.description}</td>
-              <td>{item.tag}</td>
-              <td>{item.method}</td>
-              <td>{item.value}</td>
-              <td>{item.exchangeRates[item.currency].name}</td>
-              <td>{parseFloat(item.exchangeRates[item.currency].ask).toFixed(2)}</td>
-              <td>
+            <tr key={item.id} className='tableB'>
+              <td className='tableA'>{item.description}</td>
+              <td className='tableA'>{item.tag}</td>
+              <td className='tableA'>{item.method}</td>
+              <td className='tableA'>{item.value}</td>
+              <td className='tableA'>{item.exchangeRates[item.currency].name}</td>
+              <td className='tableA'>{parseFloat(item.exchangeRates[item.currency].ask).toFixed(2)}</td>
+              <td className="tableA">
                 {parseFloat(item.exchangeRates[item.currency]
                   .ask * item.value).toFixed(2)}
               </td>
-              <td>Real</td>
+              <td className="tableA">Real</td>
               <td>
                 <button
                   type="button"
+                  className="ButtonS"
                   data-testid="delete-btn"
-                  onClick={ () => remover(item.id) }
+                  onClick={() => remover(item.id)}
                 >
                   Excluir
                 </button>

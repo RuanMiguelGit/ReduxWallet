@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ReduxWallet/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/ReduxWallet/static/js/main.d23b9a9a.chunk.js",
-    "main.js.map": "/ReduxWallet/static/js/main.d23b9a9a.chunk.js.map",
+    "main.css": "/ReduxWallet/static/css/main.cc5a38d7.chunk.css",
+    "main.js": "/ReduxWallet/static/js/main.89a88bd8.chunk.js",
+    "main.js.map": "/ReduxWallet/static/js/main.89a88bd8.chunk.js.map",
     "runtime-main.js": "/ReduxWallet/static/js/runtime-main.1280ff01.js",
     "runtime-main.js.map": "/ReduxWallet/static/js/runtime-main.1280ff01.js.map",
-    "static/js/2.892cc2da.chunk.js": "/ReduxWallet/static/js/2.892cc2da.chunk.js",
-    "static/js/2.892cc2da.chunk.js.map": "/ReduxWallet/static/js/2.892cc2da.chunk.js.map",
+    "static/js/2.980e98db.chunk.js": "/ReduxWallet/static/js/2.980e98db.chunk.js",
+    "static/js/2.980e98db.chunk.js.map": "/ReduxWallet/static/js/2.980e98db.chunk.js.map",
     "index.html": "/ReduxWallet/index.html",
-    "precache-manifest.6e4a2bf8631eced63368ad15f796136b.js": "/ReduxWallet/precache-manifest.6e4a2bf8631eced63368ad15f796136b.js",
+    "precache-manifest.a4da5d77c47d7ceccc6209c7428f348e.js": "/ReduxWallet/precache-manifest.a4da5d77c47d7ceccc6209c7428f348e.js",
     "service-worker.js": "/ReduxWallet/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/ReduxWallet/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.892cc2da.chunk.js.LICENSE.txt": "/ReduxWallet/static/js/2.892cc2da.chunk.js.LICENSE.txt"
+    "static/css/main.cc5a38d7.chunk.css.map": "/ReduxWallet/static/css/main.cc5a38d7.chunk.css.map",
+    "static/js/2.980e98db.chunk.js.LICENSE.txt": "/ReduxWallet/static/js/2.980e98db.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1280ff01.js",
-    "static/js/2.892cc2da.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d23b9a9a.chunk.js"
+    "static/js/2.980e98db.chunk.js",
+    "static/css/main.cc5a38d7.chunk.css",
+    "static/js/main.89a88bd8.chunk.js"
   ]
 }

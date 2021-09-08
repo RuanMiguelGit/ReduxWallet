@@ -35,8 +35,6 @@
 <h2>Membros do Projeto</h2>
 <ul>
   <li>Ruan Miguel => https://github.com/ruanmiguelgit</li>
-  <li> Gustavo Thirion => https://github.com/Gustaft86</li>
-  <li> Rodrigo Sudario => https://github.com/RodrigoSudario</li>
 </ul>
 
 
